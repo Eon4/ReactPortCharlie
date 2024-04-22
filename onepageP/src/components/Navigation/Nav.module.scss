@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+// .navStyle {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 20px;
+//     background-color: #333; 
+    
+//   }
+  
+//   .navStyle a {
+//     color: white;
+//     text-decoration: none;
+//     font-size: 24px; 
+//     text-align: center;
+//     margin: 30px;
+//   }
+
+  
+//   .navStyle a:hover {
+//     color: #f00; 
+//   }
+  
+
+.navStyle {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333; 
+  border-bottom: 4px solid rgb(2, 187, 216); 
+  // overflow: hidden;
+  // border-radius: 40px;
+}
+
+.navStyle a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px; 
+  text-align: center;
+  margin: 30px;
+  position: relative; 
+  font-family: "Orbitron", sans-serif;; 
+}
+
+.navStyle a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(2, 187, 216); 
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  transition: width 0.3s ease; 
+}
+
+.navStyle a:hover::after,
+.navStyle a:active::after { 
+  width: 100%; 
+}
+
+.navStyle a:hover,
+.navStyle a:active,
+.navStyle a:focus { 
+  color: rgb(2, 187, 216); 
+}
