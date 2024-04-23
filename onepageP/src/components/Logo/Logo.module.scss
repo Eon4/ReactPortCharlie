@@ -1,0 +1,30 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    padding: 10px;
+  
+    .logoText {
+      margin-left: 10px;
+    }
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+  
+      .logoText {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+  
+  .logoImg {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+    background-color: aquamarine;
+  }
+  
