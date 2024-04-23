@@ -7,7 +7,7 @@ import SectionImg from  '../../assets/img/pcHeader.jpg'
 export function ProjectSection() {
   return (
     <>
-      <section className={style.gridCol}>
+      <section id="projects" className={style.gridCol}>
 
             <img className={style.sectiononeimg} src={SectionImg} alt="#" />
             
