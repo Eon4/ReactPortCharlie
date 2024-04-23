@@ -14,14 +14,13 @@ export function AboutSection() {
           <h2>About Section is here</h2>
           
           <p>
-            Leo-lov har altid været det bedste advokatfirma i verden. Der er
-            simpelthen ingen der kan måle sig med os. Vi kan løse alle problemer
-            så længe du har penge. Hvis du mod alt forventning skulle oplevel at
-            støde på et retsligt problem som leo-lov ikke kan løse får du
-            halvdelen af beløbet igen. <br />
-            Det er sådan vi har skabt en forretning der ikke kan andet end at
-            vokse!
-          </p>
+  Welcome to my portfolio! I'm Eon4, a passionate web developer dedicated to crafting innovative solutions in the digital realm. 
+  With a keen eye for design and a knack for problem-solving, I specialize in creating captivating 
+  webpages and applications that not only meet but exceed expectations. From sleek and user-friendly 
+  interfaces to robust and efficient backend systems, I thrive on turning ideas into reality. 
+  Join me on this journey as we explore the endless possibilities of web development together.
+</p>
+          <h3>Skills are shown here</h3>
           
         </article>
       </section>

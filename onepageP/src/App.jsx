@@ -1,13 +1,16 @@
  //App file 
- import { useState } from 'react'
-import { MainPage } from "./pages/MainPage/MainPage";
+ import "./App.css";
 
-
-function App() {
-
-  return (
-      <MainPage/>
-  )
-}
-
-export default App
+ import { BrowserRouter as Router } from 'react-router-dom';
+ import { MainPage } from "./pages/MainPage/MainPage";
+ 
+ function App() {
+   return (
+     <Router>
+       <MainPage />
+     </Router>
+   );
+ }
+ 
+ export default App;
+ 
