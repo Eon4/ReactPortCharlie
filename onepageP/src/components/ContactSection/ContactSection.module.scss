@@ -1,0 +1,34 @@
+
+
+
+
+.sectiononeimg{
+    width: 100%;
+    border-color: #002BC2;
+    border-width: 10px;
+    border-style:solid;
+}
+
+.gridCol {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px; 
+    margin: 10px;
+    margin-top: 220px;
+    border-color: #002BC2;
+    border-width: 10px;
+    border-style:solid;
+
+    p{
+        font-size: 20px;
+        border: solid 2px white;
+        text-align: center;
+    }
+
+    h2{
+        border: solid 2px white;
+        text-align: center;   
+        padding-top: 20px;
+ 
+    }
+}

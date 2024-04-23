@@ -4,9 +4,9 @@ import style from './Nav.module.scss'
 export const Navigation = () => {
  
     const navItems = [
-        { route: "Home" },
-        { route: "Projects" },
+        { route: "CL" },
         { route: "About" },
+        { route: "Projects" },
         { route: "Contact" },
       ];
     
