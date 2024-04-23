@@ -1,7 +1,5 @@
 
-import { useEffect } from 'react';
 import style from './Nav.module.scss'
-import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
  

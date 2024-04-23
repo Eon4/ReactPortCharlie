@@ -1,29 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-
-// .navStyle {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 20px;
-//     background-color: #333; 
-    
-//   }
-  
-//   .navStyle a {
-//     color: white;
-//     text-decoration: none;
-//     font-size: 24px; 
-//     text-align: center;
-//     margin: 30px;
-//   }
-
-  
-//   .navStyle a:hover {
-//     color: #f00; 
-//   }
-  
-
 .navStyle {
   display: flex;
   justify-content: space-between;
@@ -36,12 +13,14 @@
 
 .navStyle a {
   color: white;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 24px; 
   text-align: center;
   margin: 30px;
   position: relative; 
-  font-family: "Orbitron", sans-serif;; 
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  
 }
 
 .navStyle a::after {
@@ -54,11 +33,13 @@
   bottom: -5px; 
   left: 0;
   transition: width 0.3s ease; 
+  
 }
 
 .navStyle a:hover::after,
 .navStyle a:active::after { 
   width: 100%; 
+  
 }
 
 .navStyle a:hover,
