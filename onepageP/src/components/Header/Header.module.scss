@@ -1,7 +1,9 @@
 
 
 .headerStyle{
-    font-family: "Jura", sans-serif;
+    // font-family: "Jura", sans-serif;
+    font-family: var(--fontFamily);
+
     color: #10d2e3;
     font-size: 8rem;
     position: absolute;

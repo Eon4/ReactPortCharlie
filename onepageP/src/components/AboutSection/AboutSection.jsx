@@ -1,6 +1,6 @@
 
 import style from "../AboutSection/AboutSection.module.scss";
-import SectionImg from  '../../assets/img/pcHeader.jpg'
+// import SectionImg from  '../../assets/img/pcHeader.jpg'
 
 
 export function AboutSection() {
@@ -8,7 +8,7 @@ export function AboutSection() {
     <>
       <section id="about" className={style.gridCol}>
 
-            <img className={style.sectiononeimg} src={SectionImg} alt="#" />
+            {/* <img className={style.sectiononeimg} src={SectionImg} alt="#" /> */}
             
         <article>
           <h2>About Section is here</h2>
