@@ -5,24 +5,20 @@ import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
  
-    useEffect(() => {
-        console.log("Navigation Component has Mounted")
-        return (
-            () => {
-                console.log("Navigation Component has Un-Mounted")
-            }
-        )
-    }, [])
-
-    return (
+    const navItems = [
+        { route: "Home" },
+        { route: "Projects" },
+        { route: "About" },
+        { route: "Contact" },
+      ];
+    
+      return (
         <nav className={style.navStyle}>
-            <div>
-                <Link to="/">Frontpage</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-
-            </div>
+          <div>
+            {navItems.map((item, i) => {
+              return <a key={i}>{item.route}</a>;
+            })}
+          </div>
         </nav>
-    )
-}
+      );
+    };
