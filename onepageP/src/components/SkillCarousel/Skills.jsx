@@ -1,7 +1,5 @@
-
 import style from '../SkillCarousel/Skills.module.scss';
 import { useEffect, useState } from "react";
-import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import reactIcon from '../../assets/img/Skillicons/reacticon.svg';
 import HTMLIcon from '../../assets/img/Skillicons/html.svg';
 import JSIcon from '../../assets/img/Skillicons/css.svg';
@@ -48,7 +46,7 @@ const ShowMeYourSkills = () => {
             className={style.scope}
             style={{
               '--i': index + 1,
-              transform: `rotateY(calc(var(--i) * 45deg)) translateZ(350px)`,
+              transform: `rotateY(calc(var(--i) * 24deg)) translateZ(200px)`,
             }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -56,7 +54,7 @@ const ShowMeYourSkills = () => {
             <img
               src={skill.icon}
               alt={skill.name}
-              className={hoveredIndex === index ? style.hovered : ""}
+              className={style.icon}
             />
           </div>
         ))}
