@@ -1,6 +1,7 @@
 
 import style from "../AboutSection/AboutSection.module.scss";
 // import SectionImg from  '../../assets/img/pcHeader.jpg'
+import ShowMeYourSkills from '../SkillCarousel/Skills'
 
 
 export function AboutSection() {
@@ -21,6 +22,7 @@ export function AboutSection() {
   Join me on this journey as we explore the endless possibilities of web development together.
 </p>
           <h3>Skills are shown here</h3>
+          <ShowMeYourSkills/>
           
         </article>
       </section>
