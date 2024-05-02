@@ -16,51 +16,33 @@ import PSIcon from '../../assets/img/Skillicons/PS.svg';
 import XDIcon from '../../assets/img/Skillicons/XD.svg';
 import GimpIcon from '../../assets/img/Skillicons/gimp.svg';
 
-const skillIcons = [
-  { icon: reactIcon, name: 'React' },
-  { icon: HTMLIcon, name: 'HTML' },
-  { icon: JSIcon, name: 'JavaScript' },
-  { icon: CSSIcon, name: 'CSS' },
-  { icon: gitIcon, name: 'Git' },
-  { icon: GraphQLIcon, name: 'GraphQL' },
-  { icon: SassIcon, name: 'Sass' },
-  { icon: VSIcon, name: 'VS Code' },
-  { icon: NodeJSIcon, name: 'Node.js' },
-  { icon: PostmanIcon, name: 'Postman' },
-  { icon: MySQLIcon, name: 'MySQL' },
-  { icon: FigmaIcon, name: 'Figma' },
-  { icon: PSIcon, name: 'Photoshop' },
-  { icon: XDIcon, name: 'Adobe XD' },
-  { icon: GimpIcon, name: 'GIMP' },
-];
-
 const ShowMeYourSkills = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <div className={style.carouselContainer}>
       <div className={style.carousel}>
-        {skillIcons.map((skill, index) => (
-          <div
-            key={index}
-            className={style.scope}
-            style={{
-              '--i': index + 1,
-              transform: `rotateY(calc(var(--i) * 24deg)) translateZ(200px)`,
-            }}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <img
-              src={skill.icon}
-              alt={skill.name}
-              className={style.icon}
-            />
-          </div>
-        ))}
+        <div className={style.scope}>
+          <span style={{ '--i': 1 }}><img src={reactIcon} alt="React" /></span>
+          <span style={{ '--i': 2 }}><img src={HTMLIcon} alt="HTML" /></span>
+          <span style={{ '--i': 3 }}><img src={JSIcon} alt="JavaScript" /></span>
+          <span style={{ '--i': 4 }}><img src={CSSIcon} alt="CSS" /></span>
+          <span style={{ '--i': 5 }}><img src={gitIcon} alt="Git" /></span>
+          <span style={{ '--i': 6 }}><img src={GraphQLIcon} alt="GraphQL" /></span>
+          <span style={{ '--i': 7 }}><img src={SassIcon} alt="Sass" /></span>
+          <span style={{ '--i': 8 }}><img src={VSIcon} alt="VS Code" /></span>
+          <span style={{ '--i': 9 }}><img src={NodeJSIcon} alt="Node.js" /></span>
+          <span style={{ '--i': 10 }}><img src={PostmanIcon} alt="Postman" /></span>
+          <span style={{ '--i': 11 }}><img src={MySQLIcon} alt="MySQL" /></span>
+          <span style={{ '--i': 12 }}><img src={FigmaIcon} alt="Figma" /></span>
+          <span style={{ '--i': 13 }}><img src={PSIcon} alt="Photoshop" /></span>
+          <span style={{ '--i': 14 }}><img src={XDIcon} alt="Adobe XD" /></span>
+          <span style={{ '--i': 15 }}><img src={GimpIcon} alt="GIMP" /></span>
+        </div>
       </div>
     </div>
   );
 };
 
 export default ShowMeYourSkills;
+

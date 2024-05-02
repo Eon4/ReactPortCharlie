@@ -1,14 +1,14 @@
-.carouselContainer {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: slid 30s linear infinite;
-    
-  }
-  
-  .carousel {
-    
+.scope {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  // justify-content: center;
+
+  animation: slid 30s linear infinite;
+}
+
+.scope span {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,47 +16,30 @@
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
-  }
-  
-  .scope {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+  transform: rotateY(calc(var(--i) * 22.5deg)) translateZ(250px);
+}
 
-  }
-  
-  .scope img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: 2s;
-    
-  }
+.scope span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.5s;
+  margin: 5px; 
+}
 
-  
-  .scope:hover img {
-    transform: translateY(-50px) scale(1.7);
+.scope span:hover img {
+  transform: translateY(-50px) scale(1.7);
+}
+
+@keyframes slid {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
   }
-  
-  .hovered {
-    transform: translateY(-50px) scale(1.7);
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
   }
-  
-  @keyframes slid {
-    0% {
-      transform: perspective(1000px) rotateY(0deg);
-    }
-    100% {
-      transform: perspective(1000px) rotateY(360deg);
-    }
-  }
+}
