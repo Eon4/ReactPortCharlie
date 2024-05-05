@@ -3,14 +3,14 @@ import style from "../AboutSection/AboutSection.module.scss";
 // import SectionImg from  '../../assets/img/pcHeader.jpg'
 import ShowMeYourSkills from '../SkillCarousel/Skills'
 
-
 export function AboutSection() {
   return (
     <>
       <section id="about" className={style.gridCol}>
 
             {/* <img className={style.sectiononeimg} src={SectionImg} alt="#" /> */}
-            
+
+   
         <article>
           <h2>About Section is here</h2>
           
@@ -21,10 +21,12 @@ export function AboutSection() {
   interfaces to robust and efficient backend systems, I thrive on turning ideas into reality. 
   Join me on this journey as we explore the endless possibilities of web development together.
 </p>
-          <h3>Skills are shown here</h3>
-          <ShowMeYourSkills/>
-          
+        
         </article>
+    {/* <h3 className={style.sectionSkills} >Skills are shown here</h3> */}
+
+        <ShowMeYourSkills/>
+
       </section>
     </>
   );
