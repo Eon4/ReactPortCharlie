@@ -8,7 +8,7 @@ $height: 5px;
     // width: 130px;
     height: 150px;
     animation: fadeOut 1s ease-in-out; 
-    filter: grayscale(80%) 
+    filter: grayscale(80%);
 
 
 }
@@ -16,8 +16,6 @@ $height: 5px;
 .card {
  // when holo effect is inside of you parent class
  position: relative;
- 
- //
  width: 200px;
  height: 170px;
  margin-top: 70px;
@@ -70,7 +68,7 @@ $height: 5px;
   transform: translateY(-10px)
  } to {
   will-change: transform;
-  transform: translateY(-10px)
+  transform: translateY(-13px)
  }
 }
 
@@ -134,5 +132,25 @@ $height: 5px;
     }
     to {
         opacity: 1;
+    }
+}
+.icon:hover {
+    cursor: pointer;
+    clip: rect(28vh, 100vh, 38vh, 0vh);
+//   margin-left: -1vh;
+  margin-top: .1vh;
+  filter: brightness(100%) contrast(2);
+    animation: shake-vhs 1.1s ease infinite, flicker 0.1s infinite alternate; 
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
     }
 }

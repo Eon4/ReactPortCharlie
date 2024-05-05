@@ -46,7 +46,7 @@ const icons = [
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % icons.length);
                 setShowIcon(true); // Start fade-in animation
             }, 500); // Wait for fade-out animation to complete
-        }, 1500);
+        }, 2500);
 
         return () => clearInterval(interval);
     }, []);
