@@ -3,6 +3,8 @@ import style from "../AboutSection/AboutSection.module.scss";
 // import SectionImg from  '../../assets/img/pcHeader.jpg'
 import ShowMeYourSkills from '../SkillCarousel/Skills'
 
+import ShowMeTheHolograph from '../Holographic/HolographicCard'
+
 export function AboutSection() {
   return (
     <>
@@ -25,7 +27,9 @@ export function AboutSection() {
         </article>
     {/* <h3 className={style.sectionSkills} >Skills are shown here</h3> */}
 
-        <ShowMeYourSkills/>
+        {/* <ShowMeYourSkills/> */}
+
+        <ShowMeTheHolograph/>
 
       </section>
     </>

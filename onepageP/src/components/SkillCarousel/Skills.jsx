@@ -1,6 +1,5 @@
 import style from '../SkillCarousel/Skills.module.scss';
 import { useEffect, useState } from "react";
-import React from 'react';
 import reactIcon from '../../assets/img/Skillicons/reacticon.svg';
 import HTMLIcon from '../../assets/img/Skillicons/html.svg';
 import JSIcon from '../../assets/img/Skillicons/css.svg';
