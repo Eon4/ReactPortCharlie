@@ -37,10 +37,15 @@ const icons = [
   
   const ShowMeTheHolograph = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [showIcon, setShowIcon] = useState(true);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % icons.length);
+            setShowIcon(false); // Start fade-out animation
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % icons.length);
+                setShowIcon(true); // Start fade-in animation
+            }, 500); // Wait for fade-out animation to complete
         }, 1500);
 
         return () => clearInterval(interval);
@@ -49,11 +54,14 @@ const icons = [
     return (
         <div className={style.card}>
             <div className={style.holo}></div>
-            <img
-                src={icons[currentIndex]}
-                alt="icon"
-                className={`${style.icon} ${style.fadeIn}`}
-            />
+            {showIcon && (
+                <img
+                    key={currentIndex}
+                    src={icons[currentIndex]}
+                    alt="icon"
+                    className={`${style.icon} ${style.fadeInOut} ${style.fadeIn}`} 
+                />
+            )}
         </div>
     );
 };

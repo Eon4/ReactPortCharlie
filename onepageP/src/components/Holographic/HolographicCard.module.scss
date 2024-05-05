@@ -7,7 +7,8 @@ $height: 5px;
 .icon{
     // width: 130px;
     height: 150px;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeOut 1s ease-in-out; 
+    filter: grayscale(80%) 
 
 
 }
@@ -113,6 +114,18 @@ $height: 5px;
   0 -75px 50px rgba($holo-color, 1),
   ;
  }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0; 
+    }
 }
 
 @keyframes fadeIn {
