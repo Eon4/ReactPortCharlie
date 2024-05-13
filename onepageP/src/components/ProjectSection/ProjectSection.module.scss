@@ -89,8 +89,38 @@
     transition: opacity 0.5s ease; 
 }
 
-.overlayText {
+.overlayText{
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    margin: 5px;
+    font-family:var(--RobotFamily);
+}
+
+.descText{
+    font-size: 24px;
+    // font-weight: bold;
+    margin: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:var(--RobotFamily);
+
+
+}
+
+.seeMoreLink{
+    font-size: 25px;
+    margin: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:var(--RobotFamily);
+
+}
+.seeMoreLink:hover {
+    color: rgb(0, 142, 167);
+    text-decoration: none;
+  }
+
+.CoffeebyJamesVid{
+    object-fit: contain;
+    width: 100%; /* Ensure the video fills its container */
+    height: 100%; /* Ensure the video fills its container */
 }
