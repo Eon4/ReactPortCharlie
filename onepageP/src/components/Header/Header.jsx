@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import style from '../Header/Header.module.scss';
-import HeaderImg from '../../assets/img/pcHeader.jpg';
+import HeaderImg from '../../assets/img/HeaderMine02.png';
 
 export function Header() {
   const [scrollPos, setScrollPos] = useState(0);
