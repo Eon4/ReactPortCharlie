@@ -22,17 +22,17 @@ export function ProjectSection() {
     // Defining arrays of names and descriptions
     const names = ["Project Weather App", "Project Under The Moon", "Project WallyWood", "Project Elprisen.nu", "Project INGN News Page", "Coffee By James"];
     const descriptions = [
-      "Weather app project created with HTML, CSS and JS. Works with an API call from www.elprisenligenu.dk",
+      "Weather app project created with HTML, CSS and JS. Works with API call from",
       "Description text 2",
       "Description text 3",
-      "Description text 4",
+      "App showing prices for current electricity prices. Created with HTML, CSS and JS. Works with API call from www.elprisenligenu.dk",
       "Description text 5",
       "First project. Online Coffee Store, with latest design updates by the owner to enable seamless self-management of the webpage."
     ];
   
     return (
         <div className={style.galleryContainer}>
-          <div className={style.imageGrid}>
+          <div id='projects' className={style.imageGrid}>
             {images.map((image, index) => (
               <div key={index} className={style.gridItem}>
                 <a href={image.link} target="_blank" rel="noopener noreferrer">
