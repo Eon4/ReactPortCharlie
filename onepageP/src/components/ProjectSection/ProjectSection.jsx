@@ -5,7 +5,7 @@ import ElApp from '../../assets/img/projectImages/Elprisen02.png';
 import WallyWood from '../../assets/img/projectImages/WallyWood.png';
 import WeatherApp from '../../assets/img/projectImages/weatherApp.png';
 import CoffeeJames from '../../assets/img/Jamesimg.png';
-import cbjVid from '../../assets/Media/cbjVid.mp4';
+import cbjVid from '../../assets/Media/CBJ01Vid.mp4';
 import { useRef, useEffect } from 'react';
 
 
@@ -21,12 +21,12 @@ export function ProjectSection() {
 
     // Defining an array of image URLs and corresponding links
     const items = [
-      { url: cbjVid, link: "https://example.com/coffee-by-james", type: 'video' },
-      { url: WeatherApp, link: "https://example.com/weather-app", type: 'image' },
-      { url: UnderTheMoon, link: "https://example.com/under-the-moon", type: 'image' },
-      { url: WallyWood, link: "https://example.com/wally-wood", type: 'image' },
-      { url: ElApp, link: "https://example.com/el-app", type: 'image' },
-      { url: NewsPage, link: "https://example.com/news-page", type: 'image' },
+      { url: cbjVid, link: "https://www.coffeebyjames.dk/", type: 'video' },
+      { url: WeatherApp, link: "https://github.com/Eon4/weather-app-test", type: 'image' },
+      { url: UnderTheMoon, link: "https://github.com/Eon4/UnderTheMoon/tree/main/UnderTheMoonProject/src", type: 'image' },
+      { url: WallyWood, link: "https://github.com/Eon4/WallyWoodProject/tree/main/wood/src", type: 'image' },
+      { url: ElApp, link: "https://github.com/Eon4/ElpriserNu", type: 'image' },
+      { url: NewsPage, link: "hhttps://github.com/Eon4/INGN-Project/tree/main/ingnProject/src", type: 'image' },
   ];
 
   // Defining arrays of names and descriptions
@@ -40,13 +40,14 @@ export function ProjectSection() {
   ];
 
   const descriptions = [
-      "First project. Online Coffee Store, with latest design updates by the owner to enable seamless self-management of the webpage.",
-      "Weather app project created with HTML, CSS and JS. Works with API call from",
-      "Description text 2",
-      "Description text 3",
-      "App showing prices for current electricity prices. Created with HTML, CSS and JS. Works with API call from www.elprisenligenu.dk",
-      "Description text 5"
-  ];
+    "Online Coffee Store, selling ground coffee and tools for coffee lovers. Crafted using HTML, CSS, and JS, with specific modifications made by the owner to simplify product design for personal ease.",
+    "Weather app project created with HTML, CSS, and JS. Utilizes API calls from openweathermap.org.",
+    "Under The Moon project for a hair salon. Single-page application created in React.",
+    "Wallywood is an online shop for movie posters, where customers can browse and find posters from a categorized list. Crafted using React, Express, and MySQL as the database.",
+    "App displaying current electricity prices. Created with HTML, CSS, and JS. Utilizes API calls from www.elprisenligenu.dk.",
+    "A simple news webpage crafted in React, using a headless CMS with HyGraph. Users can sort news by categories. Includes admin login for updating and deleting news articles."
+];
+
 
   return (
     <div className={style.galleryContainer}>
