@@ -1,60 +1,92 @@
 .headerContainer {
-  display: flex;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  // gap: 16px; 
+  // margin: 5px;
+  justify-content: center;
+  align-items: center; 
+  font-family: var(--fontFamily);
+
+
+
+margin: 50px;
+
 }
 
 .textContainer {
-  flex: 1;
+  // flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 20px;
-}
+  align-items: center;
 
 
-.headerStyle {
-  align-items: center; 
-  justify-content: space-between; 
-  font-family: var(--fontFamily);
-  color: #10d2e3;
-  font-size: 8rem;
-  margin-left: 20px;
-  span {
-    color: #ffffff;
+  h2{
+    font-size: 38px;
+    // text-align: center;
   }
 }
 
 
+.headerStyle {
+  font-family: var(--fontFamily);
+  color: #10d2e3;
+  font-size: 3rem; 
+  text-align: center; 
+
+  
+  span {
+    color: #ffffff;
+  }
+}
+h2{
+  color: #ffffff;
+  span {
+    color: #10d2e3;
+  }
+
+}
 .hero {
-  margin: 60px;
-  width: 450px;
-  height: 450px;
+  
+  width: 950px;
+  height: 950px;
   position: relative;
   display: flex;
-  justify-content: center; 
+  justify-items: center;
   align-items: center; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 .myHero {
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  height: auto; 
+  max-width: 100%;
     object-fit: cover;
-    position: relative;
+    // position: relative;
     z-index: 2; 
     border-radius: 50%;
+    // border: 10px outset  rgb(0, 156, 234);
+    box-shadow: 0 0 100px rgb(5, 83, 217);
+ 
 
+}
+.myHero:hover{
+  filter: grayscale(100%);
+  
 }
 
 .wavyBorder {
   position: absolute;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   width: 100%;
   height: 100%;
-  border: 3px solid rgb(0, 156, 234);
+  // border: 3px solid rgb(0, 156, 234);
   border-radius: 50%;
   box-shadow: 0 0 35px rgb(5, 83, 217);
   animation: wavyAnimation 8s ease-in-out infinite;
+  
 }
 
 @keyframes wavyAnimation {
