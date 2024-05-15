@@ -26,7 +26,7 @@ export function ProjectSection() {
       { url: UnderTheMoon, link: "https://github.com/Eon4/UnderTheMoon/tree/main/UnderTheMoonProject/src", type: 'image' },
       { url: WallyWood, link: "https://github.com/Eon4/WallyWoodProject/tree/main/wood/src", type: 'image' },
       { url: ElApp, link: "https://github.com/Eon4/ElpriserNu", type: 'image' },
-      { url: NewsPage, link: "hhttps://github.com/Eon4/INGN-Project/tree/main/ingnProject/src", type: 'image' },
+      { url: NewsPage, link: "https://github.com/Eon4/INGN-Project/tree/main/ingnProject/src", type: 'image' },
   ];
 
   // Defining arrays of names and descriptions

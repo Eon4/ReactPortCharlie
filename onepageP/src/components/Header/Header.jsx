@@ -1,46 +1,23 @@
 import { useEffect, useState } from 'react';
 import style from '../Header/Header.module.scss';
-import HeaderImg from '../../assets/img/HeaderMine02.png';
+import Artimage from '../../assets/img/Portimg/artimage.jpg'
 
 export function Header() {
-  const [scrollPos, setScrollPos] = useState(0);
-  const [isBlurred, setIsBlurred] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentPosition = window.pageYOffset;
-      setScrollPos(currentPosition);
-
-      // Checking if the user is scrolling down or up
-      if (currentPosition > scrollPos) {
-        // Scrolling down
-        setIsBlurred(true);
-      } else {
-        // Scrolling up
-        setIsBlurred(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [scrollPos]);
-
   return (
-    <header>
-      <h1 className={style.headerStyle}>
-        Welcome to<span> my Portfolio</span>
-      </h1>
-      {/* <p className={style.title}>Welcome to my Portfolio</p> */}
-      <div className={style.HeaderContainer}>
-        <img
-          className={`${style.Headerimg} ${isBlurred ? style.blurred : ''}`}
-          src={HeaderImg}
-          alt="header"
-          style={{ transform: `translateY(-${scrollPos * 0.3}px)` }}
-        />
+    <header className={style.headerContainer}>
+     
+      <div className={style.textContainer}>
+        <h1 className={style.headerStyle}>
+          Welcome to<span> my Portfolio</span>
+        </h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris ut
+          officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div className={style.hero}>
+        <img className={style.myHero} src={Artimage} alt="" />
+        <div className={style.wavyBorder}></div>
       </div>
     </header>
   );
