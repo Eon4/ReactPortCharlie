@@ -2,6 +2,7 @@
 
 import style from "../ContactSection/ContactSection.module.scss";
 import SectionImg from  '../../assets/img/pcHeader.jpg'
+import contactMe from  '../../assets/img/phone.jpg'
 
 
 export function ContactSection() {
@@ -9,7 +10,7 @@ export function ContactSection() {
     <>
       <section id="contact" className={style.gridCol}>
 
-      <img className={style.sectiononeimg} src={SectionImg} alt="#" />
+      <img className={style.sectiononeimg} src={contactMe} alt="#" />
             
         <article>
           <h2>Contact section here</h2>

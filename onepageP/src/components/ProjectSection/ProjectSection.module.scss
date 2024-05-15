@@ -40,6 +40,7 @@
     justify-content: center; 
     align-items: center; 
     // height: 100vh;
+    
 }
 
 .imageGrid {
@@ -54,6 +55,10 @@
     height: 900px; 
     width: 700px;
     position: relative; 
+    border-color: #7d7d7dac;
+    border-width: 10px;
+    border-style:solid;
+    border-radius: 5px;
 
 }
 
@@ -77,22 +82,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .gridItem:hover .image {
     transform: scale(1.05); 
     transition: transform 0.5s ease; 
+    border-color: #00b0c4;
+    border-width: 10px;
+    border-style:solid;
+    
 }
 
 .gridItem:hover .overlay {
     opacity: 1; 
     transition: opacity 0.5s ease; 
+   
 }
 
 .overlayText{
     color: white;
     font-size: 28px;
     font-weight: bold;
+    // font-family: var(--fontFamily);
+
     margin: 5px;
     font-family:var(--RobotFamily);
 }
