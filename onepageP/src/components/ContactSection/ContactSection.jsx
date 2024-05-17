@@ -9,10 +9,7 @@ export function ContactSection() {
   return (
     <>
       <section id="contact" className={style.gridCol}>
-      <h2>
-            Let's start a <span>Project </span> 
-
-</h2>  
+      <h2>Let's start a <span>Project </span></h2>  
 
       {/* <img className={style.sectiononeimg} src={Handshake} alt="#" /> */}
             
@@ -21,13 +18,17 @@ export function ContactSection() {
 <div  className={style.Contacticons}  >
   <a href="https://github.com/Eon4"  target="_blank" rel="noopener noreferrer">
 <img className={style.icon} src={gitHub} alt="Icon" /></a>
-<a href="https://example.com"  target="_blank" rel="noopener noreferrer">
 
-<img className={style.icon} src={eMail} alt="Icon" /></a>
+{/* <a href="https://example.com"  target="_blank" rel="noopener noreferrer">
+<img className={style.icon} src={eMail} alt="Icon" /></a> */}
+
 <a href="https://example.com"  target="_blank" rel="noopener noreferrer">
 
 <img className={style.icon} src={linkedIn} alt="Icon" /></a>
 </div>
+<h2><span>Contact:</span></h2>  
+<h2>cl.<span>webtech</span>@<span>outlook </span>.com</h2>  
+
       </section>
     </>
   );
