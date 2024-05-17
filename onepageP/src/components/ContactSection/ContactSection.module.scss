@@ -40,7 +40,7 @@
     }
 
     h2{
-        border: solid 2px white;
+        // border: solid 2px white;
         text-align: center;   
         padding-top: 20px;
         font-size: 3rem;
@@ -50,10 +50,23 @@
     }
 }
 
-// .Contacticons{
-//     width: 50px;
-// }
+.Contacticons {
+    display: flex;
+    gap: 20px; 
+
+}
+
 .icon {
     width: 100px; 
     height: auto; 
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+    
+
+}
+
+.icon:hover {
+    filter: grayscale(0%) sepia(100%) saturate(300%) hue-rotate(140deg);
+    transform: scale(1.1);
+    cursor: pointer;
 }
