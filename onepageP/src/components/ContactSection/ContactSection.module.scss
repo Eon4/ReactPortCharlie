@@ -3,10 +3,24 @@
 
 
 .sectiononeimg{
-    width: 100%;
-    // border-color: #002BC2;
-    // border-width: 10px;
-    // border-style:solid;
+    width: 540px;
+    height: 540px;
+
+    // width: 40%;
+    // height: auto; 
+    max-width: 100%;
+      object-fit: cover;
+      // position: relative;
+    //   z-index: 2; 
+      border-radius: 50%;
+      // border: 10px outset  rgb(0, 156, 234);
+      box-shadow: 0 0 100px rgb(5, 83, 217);
+      justify-items: center;
+    //   align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      
+      transition: transform 0.5s ease; 
 }
 
 .gridCol {
@@ -15,9 +29,9 @@
     gap: 16px; 
     margin: 10px;
     margin-top: 220px;
-    border-color: #002BC2;
-    border-width: 10px;
-    border-style:solid;
+    // border-color: #002BC2;
+    // border-width: 10px;
+    // border-style:solid;
 
     p{
         font-size: 20px;
@@ -29,6 +43,17 @@
         border: solid 2px white;
         text-align: center;   
         padding-top: 20px;
+        font-size: 3rem;
+        font-family: var(--fontFamily);
+
  
     }
+}
+
+// .Contacticons{
+//     width: 50px;
+// }
+.icon {
+    width: 100px; 
+    height: auto; 
 }

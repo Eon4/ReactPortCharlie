@@ -1,31 +1,30 @@
 
 
 import style from "../ContactSection/ContactSection.module.scss";
-import SectionImg from  '../../assets/img/pcHeader.jpg'
-import contactMe from  '../../assets/img/phone.jpg'
+import Handshake from '../../assets/img/handshake.jpg'
+import gitHub from '../../assets/img/Contacticons/github_icon.svg';
+import eMail from '../../assets/img/Contacticons/email_icon.svg';
+import linkedIn from '../../assets/img/Contacticons/linkedin-icon.svg';
 
 
 export function ContactSection() {
   return (
     <>
       <section id="contact" className={style.gridCol}>
+      <h2>
+            Let's <span>Connect! </span> 
 
-      <img className={style.sectiononeimg} src={contactMe} alt="#" />
+</h2>  
+
+      {/* <img className={style.sectiononeimg} src={Handshake} alt="#" /> */}
             
-        <article>
-          <h2>Contact section here</h2>
-          
-          <p>
-            Leo-lov har altid været det bedste advokatfirma i verden. Der er
-            simpelthen ingen der kan måle sig med os. Vi kan løse alle problemer
-            så længe du har penge. Hvis du mod alt forventning skulle oplevel at
-            støde på et retsligt problem som leo-lov ikke kan løse får du
-            halvdelen af beløbet igen. <br />
-            Det er sådan vi har skabt en forretning der ikke kan andet end at
-            vokse!
-          </p>
-          
-        </article>
+          {/* <h2>Contact section here</h2> */}
+
+<div  className={style.Contacticons}  >
+<img className={style.icon} src={gitHub} alt="Icon" />
+<img className={style.icon} src={eMail} alt="Icon" />
+<img className={style.icon} src={linkedIn} alt="Icon" />
+</div>
       </section>
     </>
   );
