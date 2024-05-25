@@ -27,7 +27,7 @@ export function ContactSection() {
 <img className={style.icon} src={linkedIn} alt="Icon" /></a>
 </div>
 <h2><span>Contact:</span></h2>  
-<h2>cl.<span>webtech</span>@<span>outlook </span>.com</h2>  
+<h2>cl.<span>webtech</span>@<span>outlook</span>.com</h2>  
 
       </section>
     </>
