@@ -1,0 +1,29 @@
+// .app {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background: #111;
+//   }
+  
+  .mask-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    mask-image: var(--mask);
+    -webkit-mask-image: var(--mask);
+  }
+  
+  .mask-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;  
+    transition: opacity 0.5s ease; 
+  }
+  
+  .mask-container img.visible {
+    opacity: 1; 
+  }
+  
